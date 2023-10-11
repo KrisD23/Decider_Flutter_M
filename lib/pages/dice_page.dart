@@ -1,3 +1,4 @@
+import 'package:decider_app/util/nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class DicePage extends StatelessWidget {
@@ -5,8 +6,13 @@ class DicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        elevation: 0,
+      ),
+      drawer: const NavBar(),
+      body: const Center(
         child: Text('Dice page'),
       ),
     );

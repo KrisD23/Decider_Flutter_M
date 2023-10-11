@@ -1,6 +1,3 @@
-import 'package:decider_app/pages/coin_page.dart';
-import 'package:decider_app/pages/dice_page.dart';
-import 'package:decider_app/pages/random_page.dart';
 import 'package:decider_app/util/nav_bar.dart';
 import 'package:flutter/material.dart';
 
