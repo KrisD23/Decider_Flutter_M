@@ -64,6 +64,8 @@ flutter:
     - lib/assets/images/dice-4.png
     - lib/assets/images/dice-5.png
     - lib/assets/images/dice-6.png
+    - lib/assets/images/Coin1.png
+    - lib/assets/images/Coin2.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
