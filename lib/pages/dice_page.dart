@@ -14,7 +14,6 @@ class _DicePageState extends State<DicePage> {
   void rollDice() {
     setState(() {
       diceNumber = Random().nextInt(6) + 1;
-      print(diceNumber);
     });
   }
 
@@ -28,7 +27,7 @@ class _DicePageState extends State<DicePage> {
       drawer: const NavBar(),
       body: Column(
         children: [
-          Image.asset('lib/assets/images/dice-1.png'),
+          Image.asset('lib/assets/images/dice-$diceNumber.png'),
           TextButton(
             onPressed: rollDice,
             child: const Text('Roll Dice'),
