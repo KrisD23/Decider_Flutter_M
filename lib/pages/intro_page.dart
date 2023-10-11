@@ -7,8 +7,11 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const HomePage())),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => const HomePage(),
+        ),
+      ),
       child: const Scaffold(
           body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

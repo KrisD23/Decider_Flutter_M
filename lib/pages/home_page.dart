@@ -1,3 +1,7 @@
+import 'package:decider_app/pages/coin_page.dart';
+import 'package:decider_app/pages/dice_page.dart';
+import 'package:decider_app/pages/random_page.dart';
+import 'package:decider_app/util/nav_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,20 +14,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.blue,
         elevation: 0,
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            ListTile(
-              title: const Text('Home'),
-              onTap: () => Navigator.of(context).pop(),
-            ),
-            ListTile(
-              title: const Text('Settings'),
-              onTap: () => Navigator.of(context).pop(),
-            )
-          ],
-        ),
-      ),
+      drawer: const NavBar(),
       body: const Center(
         child: Text('Home Page'),
       ),
