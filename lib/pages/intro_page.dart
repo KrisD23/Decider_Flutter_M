@@ -12,19 +12,32 @@ class IntroPage extends StatelessWidget {
           builder: (context) => const HomePage(),
         ),
       ),
-      child: const Scaffold(
-          body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Text('Intro Page'),
+      child: Scaffold(
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.blue,
+                Colors.purple,
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
           ),
-          SizedBox(height: 20),
-          Center(
-            child: Text('Tap anywhere to continue'),
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Text('Intro Page'),
+              ),
+              SizedBox(height: 20),
+              Center(
+                child: Text('Tap anywhere to continue'),
+              ),
+            ],
           ),
-        ],
-      )),
+        ),
+      ),
     );
   }
 }
